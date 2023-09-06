@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Contact us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="4" maxlength="12" size="10" />
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br><br>
+
+        <label for="ageGroup">Age Group:</label>
+        <select id="ageGroup" name="ageGroup">
+            <option value="13-17">13-17</option>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55-64">55-64</option>
+            <option value="65+">65+</option>
+        </select>
+        <br><br>
+        
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+        <br>
+
+        <label for="background">Your Background:</label>
+        <select id="background" name="background">
+            <option value="Business Owner">Business Owner</option>
+            <option value="Entrepreneur">Entrepreneur</option>
+            <option value="Nonprofit">Nonprofit</option>
+            <option value="Educational Institution">Educational Institution</option>
+            <option value="Technology">Technology</option>
+            <option value="Artist">Artist</option>
+            <option value="Health and Wellness">Health and Wellness</option>
+            <option value="Hospitality Industry">Hospitality Industry</option>
+            <option value="Event Planner">Event Planner</option>
+            <option value="Real Estate Agent">Real Estate Agent</option>
+            <option value="Manufacturer/Retailer">Manufacturer/Retailer</option>
+        </select>
+        <br><br>
+
+        <label for="comment">Desired service:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="80" required></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
